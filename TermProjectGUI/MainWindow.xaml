@@ -1,0 +1,23 @@
+﻿<Window x:Class="TermProjectGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fast Trax" Height="286.8" Width="326.6">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="125*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="BannerID:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,117,0,0" Height="34" Width="72" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="bannerBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167" Grid.Column="2" Margin="17.6,119,0,0" />
+
+        <Label Content="Password" HorizontalAlignment="Left" Margin="15,156,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="17.8,162,0,0" VerticalAlignment="Top" Width="167" Grid.Column="2"/>
+
+        <Label Content="Brockport Bicycle Rental System" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,24,0,0" Height="73" Width="275" FontSize="18" Grid.ColumnSpan="3" FontFamily="Arial"/>
+        <Label Content="Login Screen" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,63,0,0" Height="34" Width="92" Grid.Column="2" FontSize="14" FontFamily="Arial"/>
+        <Button Content="SUBMIT" HorizontalAlignment="Left" Margin="17.8,200,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2" Click="SubmitClick"/>
+        <Button Content="EXIT" HorizontalAlignment="Left" Margin="109.8,200,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2" Click="ExitClick"/>
+
+    </Grid>
+</Window>
